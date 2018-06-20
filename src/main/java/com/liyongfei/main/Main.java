@@ -12,4 +12,8 @@ public class Main {
     public int sum(int a, int b){
         return a + b;
     }
+
+    public String say(String info){
+        return info;
+    }
 }

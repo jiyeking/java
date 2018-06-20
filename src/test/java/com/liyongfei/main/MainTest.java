@@ -1,6 +1,7 @@
 package com.liyongfei.main;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
@@ -13,6 +14,11 @@ public class MainTest {
     public void testSum() throws Exception {
         Main main = new Main();
         Assert.assertEquals(main.sum(2,3),4);
+    }
+    @Test
+    public void testSay() throws Exception {
+        Main main = new Main();
+        Assert.assertEquals(main.say("hello"),"hello");
     }
 
 }
