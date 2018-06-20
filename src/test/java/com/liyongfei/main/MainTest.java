@@ -13,7 +13,7 @@ public class MainTest {
     @org.testng.annotations.Test
     public void testSum() throws Exception {
         Main main = new Main();
-        Assert.assertEquals(main.sum(2,3),4);
+        Assert.assertEquals(main.sum(2,3),5);
     }
     @Test
     public void testSay() throws Exception {
