@@ -18,7 +18,7 @@ public class MainTest {
     @Test
     public void testSay() throws Exception {
         Main main = new Main();
-        Assert.assertEquals(main.say("hello"),"hello");
+        Assert.assertEquals(main.say("hello"),"hello11");
     }
 
 }
