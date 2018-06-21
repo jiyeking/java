@@ -1,4 +1,11 @@
 pipeline {
+    agent {
+            docker {
+                image 'maven:3-alpine'
+                args '--privileged=true -v /root/.m2:/root/.m2 -v /root/.jenkins/workspace:/root/.jenkins/workspace'
+            }
+    }
+
     stages {
         stage('Build') {
             steps {
